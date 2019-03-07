@@ -1,0 +1,41 @@
+{
+  "navItems": [
+    {
+      "title": "Option 1",
+      "submenu": null
+    },
+    {
+      "title": "Option 2",
+      "submenu": [
+        {
+          "title": "Option 2.1",
+          "class": "option-one",
+          "submenu": [
+            {
+              "title": "Option 2.1.1",
+              "submenu": null
+            },
+            {
+              "title": "Option 2.1.2",
+              "submenu": null
+            }
+          ]
+        },
+        {
+          "title": "Option 2.2",
+          "class": "option-two",
+          "submenu": [
+            {
+              "title": "Option 2.2.1",
+              "submenu": null
+            },
+            {
+              "title": "Option 2.2.2",
+              "submenu": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

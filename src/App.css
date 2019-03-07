@@ -1,33 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.multi-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+}
+.FirstSubNav {
+  width: 150px;
+}
+.NavSecond:hover
+  .option-one
+  > .MainSubNav
+  > .FirstSubNavContainer
+  .FirstSubNav {
+  color: red;
+  display: block;
+}
+.NavSecond:hover
+  .option-two
+  > .MainSubNav
+  > .FirstSubNavContainer
+  .FirstSubNav {
+  color: red;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.NavSecond .option-one > .MainSubNav > .FirstSubNavContainer .FirstSubNav {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NavSecond .option-two > .MainSubNav > .FirstSubNavContainer .FirstSubNav {
+  display: none;
+}
+
+.NavSecond .option-one .SecondSubNav {
+  display: none;
+}
+
+.NavSecond .option-two .SecondSubNav {
+  display: none;
+}
+
+.NavSecond .option-one:hover .SecondSubNav {
+  color: green;
+  display: block;
+}
+
+.NavSecond .option-two:hover .SecondSubNav {
+  color: green;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  margin: 4px;
+}
+
+.option-one .SecondSubNav {
+  position: absolute;
+  top: 11%;
+  left: 11%;
+}
+.option-two .SecondSubNav {
+  position: absolute;
+  top: 22%;
+  left: 11%;
 }
